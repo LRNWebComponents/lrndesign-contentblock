@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`lrndesign-contentblock`
+A LRN element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="lrndesign-contentblock">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'lrndesign-contentblock',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'lrndesign-contentblock',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
