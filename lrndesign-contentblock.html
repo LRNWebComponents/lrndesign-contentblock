@@ -14,7 +14,10 @@ A LRN element
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <div>
+      <h3>{{title}}</h3>
+      <content></content>
+    </div>
   </template>
 
   <script>
@@ -23,10 +26,10 @@ A LRN element
       is: 'lrndesign-contentblock',
 
       properties: {
-        prop1: {
+        title: {
           type: String,
-          value: 'lrndesign-contentblock',
-        },
+          value: 'Related content',
+        }
       },
 
     });
