@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-
+<link rel="import" href="../hax-behaviors/hax-behaviors.html">
 <!--
 `lrndesign-contentblock`
 A LRN element
@@ -9,22 +9,25 @@ A LRN element
 
 <dom-module id="lrndesign-contentblock">
   <template>
-    <style>
+  <style>
       :host {
-        display: block;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
       }
     </style>
-    <div>
-      <h3>{{title}}</h3>
+    <hax-editbar edit="{{edit}}"></hax-editbar>
+    <h3><hax-editable edit="{{edit}}" type="textfield">{{title}}</hax-editable></h3>
+    <hax-editable edit="{{edit}}" type="html">
       <content></content>
-    </div>
+    </hax-editable>
   </template>
 
   <script>
     Polymer({
 
       is: 'lrndesign-contentblock',
-
+      behaviors: [HAXBehaviors.EditBehaviors],
       properties: {
         title: {
           type: String,
