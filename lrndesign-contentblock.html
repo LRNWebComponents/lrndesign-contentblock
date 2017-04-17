@@ -29,12 +29,20 @@ A LRN element
       is: 'lrndesign-contentblock',
       behaviors: [HAXBehaviors.EditBehaviors],
       properties: {
+        /**
+         * Heading for this block
+         */
         title: {
           type: String,
-          value: 'Related content',
         }
       },
-
+      /**
+       * Demo mode.
+       */
+       _demoInit: function() {
+        this.title = "Related content";
+        this.innerHTML = "A bunch of content here";
+      }
     });
   </script>
 </dom-module>
