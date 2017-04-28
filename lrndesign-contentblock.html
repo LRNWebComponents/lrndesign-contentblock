@@ -4,7 +4,7 @@
 `lrndesign-contentblock`
 A LRN element
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="lrndesign-contentblock">
@@ -16,7 +16,7 @@ A LRN element
         box-sizing: border-box;
       }
     </style>
-    <hax-editbar edit="{{edit}}"></hax-editbar>
+    <hax-editbar {{canHax}} edit="{{edit}}"></hax-editbar>
     <h3><hax-editable edit="{{edit}}" type="textfield">{{title}}</hax-editable></h3>
     <hax-editable edit="{{edit}}" type="html">
       <content></content>
