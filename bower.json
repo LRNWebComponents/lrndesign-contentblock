@@ -1,11 +1,9 @@
 {
   "name": "lrndesign-contentblock",
-  "description": "A LRN element",
+  "description": "An incredibly simple content block",
   "main": "lrndesign-contentblock.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
-    "lrnsys-behaviors": "LRNWebComponents/lrnsys-behaviors#^1.0.0",
-    "hax-behaviors": "LRNWebComponents/hax-behaviors#^1.0.0"
+    "polymer": "Polymer/polymer#^1.4.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
